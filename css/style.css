@@ -1,0 +1,20 @@
+.admin-user {
+  width: 100px;
+  height: 100px;
+  background: #979ea8;
+  border-radius: 25%;
+  margin-top: 1em;
+  position: relative;
+  right: 0em;
+  float: right;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: white;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.hvbtn:hover {
+  background: #568ee8 !important;
+}
