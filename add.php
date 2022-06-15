@@ -25,7 +25,6 @@ require_once('./Controller/addController.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>address Book Add page</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/debug.css">
 </head>
 
 <body>
