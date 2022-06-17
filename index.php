@@ -65,7 +65,7 @@ require_once('./Controller/indexController.php');
 
                         <tr>
                             <th scope="row"><?= $i ?></th>
-                            <td><?= $contactArr->get_name() ?></td>
+                            <td><?= htmlspecialchars_decode($contactArr->get_name())  ?></td>
                             <td><?= $contactArr->get_city() ?></td>
                             <td><?= $contactArr->get_phone() ?></td>
                             <td>
