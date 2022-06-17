@@ -59,15 +59,15 @@ require_once('./Controller/editController.php');
 
                     <div class="mb-3">
                         <label for="name" class="form-label">NAME <?= '<span class="text-danger">' . $errorName . '</span>' ?></label>
-                        <input type="text" name="name" value="<?= $contact->get_name() ?>" class="form-control">
+                        <input type="text" name="name" value="<?= htmlspecialchars_decode($contact->get_name()) ?>" class="form-control">
                     </div>
                     <div class="mb-3">
                         <label for="city" class="form-label">City <?= '<span class="text-danger">' . $errorCity . '</span>' ?></label>
-                        <input type="text" name="city" value="<?= $contact->get_city() ?>" class="form-control">
+                        <input type="text" name="city" value="<?= htmlspecialchars_decode($contact->get_city()) ?>" class="form-control">
                     </div>
                     <div class="mb-3">
                         <label for="phone number" class="form-label">Phone Number <?= '<span class="text-danger">' . $errorPhone . '</span>' ?></label>
-                        <input type="text" name="phone" value="<?= $contact->get_phone() ?>" class="form-control">
+                        <input type="text" name="phone" value="<?= htmlspecialchars_decode($contact->get_phone()) ?>" class="form-control">
                     </div>
                     <button type="submit" class="btn btn-primary float-end"> Update </button>
                 </div>

@@ -66,8 +66,8 @@ require_once('./Controller/indexController.php');
                         <tr>
                             <th scope="row"><?= $i ?></th>
                             <td><?= htmlspecialchars_decode($contactArr->get_name())  ?></td>
-                            <td><?= $contactArr->get_city() ?></td>
-                            <td><?= $contactArr->get_phone() ?></td>
+                            <td><?= htmlspecialchars_decode($contactArr->get_city()) ?></td>
+                            <td><?= htmlspecialchars_decode($contactArr->get_phone()) ?></td>
                             <td>
                                 <a href='edit.php?id=<?= $contactArr->get_id() ?>'><button class="btn btn-outline-info btn-sm">Edit</button></a>
                                 <a href='?action=delete&id= <?= $contactArr->get_id() ?>'><button class="btn btn-outline-danger btn-sm">Delete</button></a>
